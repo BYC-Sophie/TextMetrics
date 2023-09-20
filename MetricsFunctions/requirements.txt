@@ -1,0 +1,9 @@
+syllables
+pandas
+datasets
+transformers
+bertopic
+nltk
+transformers
+Cython
+hdbscan
