@@ -105,7 +105,7 @@ def GetRobertaEmbeddings(df, column_name, device, emb_path, save=True):
         np.savez(emb_path, *embedding_roberta)
         print("embedding_saved.")
 
-    return embedding_list_roberta
+    return embedding_roberta
 # dimension: (sample_pool_size, 1024)
 
 class TrainDataset(torch.utils.data.Dataset):
