@@ -11,7 +11,6 @@ from tqdm.auto import tqdm
 
 
 # Flesch Reading Ease score
-#requirement: “text”
 
 nltk.download('punkt')
 nltk.download('cmudict')
