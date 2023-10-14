@@ -12,10 +12,10 @@ from tqdm.auto import tqdm
 
 # Flesch Reading Ease score
 #requirement: “text”
-def prepare_download():
-    nltk.download('punkt')
-    nltk.download('cmudict')
-    d = cmudict.dict()
+
+nltk.download('punkt')
+nltk.download('cmudict')
+d = cmudict.dict()
 
 
 # the fre_score dictionary corresponding to the input
@@ -29,7 +29,6 @@ def FREReadabilityScore(text_list):
     Usage:
         perplexity = FREReadabilityScore(text_list)
     '''
-    prepare_download()
     fre_result = {}
     for i in range(len(text_list)):
         text = text_list[i]
@@ -59,11 +58,5 @@ def FREReadabilityScore(text_list):
 
         # return (word_count, sentence_count, syl_count, max(0, min(score, 100)))
         fre_result[i] = max(0, min(score, 100))
-    
+
     return list(fre_result.values())
-
-
-
-
-
-
