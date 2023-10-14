@@ -1,9 +1,10 @@
 syllables
 pandas
 datasets
-transformers
+transformers==4.30.2
 bertopic
 nltk
 transformers
 Cython
 hdbscan
+xformers
